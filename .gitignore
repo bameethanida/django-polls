@@ -146,4 +146,6 @@ dmypy.json
 # Vscode setting
 .vscode/
 
+# OS generated files
+.DS_Store
 # End of https://www.gitignore.io/api/python,django,database
