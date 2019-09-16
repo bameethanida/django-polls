@@ -30,12 +30,12 @@ class QuestionModelTests(TestCase):
         """
         was_published_recently() returns True for questions whose pub_date
         is within the last day.
-        """z 
+        """
         time = timezone.now() - datetime.timedelta(hours=23, minutes=59, seconds=59)
         recent_question = Question(pub_date=time)
         self.assertIs(recent_question.was_published_recently(), True)
     
-    def create_question(question_text, days):
+def create_question(question_text, days):
     """
     Create a question with the given `question_text` and published the
     given number of `days` offset to now (negative for questions published
