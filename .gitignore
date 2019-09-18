@@ -148,4 +148,7 @@ dmypy.json
 
 # OS generated files
 .DS_Store
+
+.env
+
 # End of https://www.gitignore.io/api/python,django,database
