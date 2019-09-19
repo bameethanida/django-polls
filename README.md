@@ -1,5 +1,5 @@
 # Django Polls Application
-Django-polls is a basic poll application which consist of two parts: a public site and admin site. A public site allows users to vote or track the results in the webpage. An admin site is for adding, changing, and deleting poll questions.
+Django-polls is a basic poll application which consist of two parts: a public site and admin site. A public site allows users to vote or track the results in the webpage. An admin site is for adding, changing, and deleting poll questions. [source](https://docs.djangoproject.com/en/2.2/intro/)
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -33,4 +33,4 @@ On Windows:
 
 
 ## Author
-Thanida Jongarnon ( 6110545538 )
+Thanida Jongarnon 6110545538
