@@ -13,15 +13,31 @@ The application requires:
 
 
 ## Installing 
-    
+### Step 1: Clone repository
     git clone https://github.com/bameethanida/django-polls.git
+
+### Step 2: Go to django-polls directory
+    cd django-polls
+
+### Step 3: Install all dependencies and run database migrations.
+On MacOS and Linux:
+
+    pip3 install -r requirements.txt
+
+    python3 manage.py migrate
+
+On Windows:
+
+    pip install -r requirements.txt
+
+    py manage.py migrate
+
 
 ## Running the tests
 
-### Step 1    
-Open terminal and go to `django-poll/mysite`
-### Step 2
-Run the following commands:  
+### Step 1: Open terminal
+    cd django-poll/mysite
+### Step 2: Run server
 
 On MacOS and Linux:   
 
