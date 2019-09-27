@@ -81,7 +81,6 @@ DATABASES = {
         'DB_URL',
         default='sqlite:///./db.sqlite3',
         cast=db_url_parser)
-    )
 }
 
 
