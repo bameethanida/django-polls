@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        config('DB_URL',default='sqlite:///' + BASE_DIR.child('db.sqlite3') cast=db_url_parser )
+        config('DB_URL',default='sqlite:///' + BASE_DIR.child('db.sqlite3') ,cast=db_url_parser )
     }
 }
 
