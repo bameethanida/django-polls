@@ -3,6 +3,8 @@ from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from django.views import generic
 from django.utils import timezone
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import logout
 
 from .models import Choice, Question
 
@@ -46,7 +48,8 @@ def detail(request, question_id):
 def results(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     return render(request, 'polls/results.html', {'question': question})
-
+    
+@login_required(login_url='/accounts/login/') 
 def vote(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     try:
