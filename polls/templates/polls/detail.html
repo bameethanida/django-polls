@@ -19,4 +19,5 @@
         {# What we want: href="accounts/login/?next=this_page" #}
         Please <a href="{% url 'login' %}?next={{ request.path }}">login</a> to vote for a topic.
     {% endif %}
+    <button><a href="{% url 'polls:results' question.id %}">See poll results</a></button>
 </form>
