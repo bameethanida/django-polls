@@ -1,3 +1,4 @@
+<h1>Current Polls</h1>
 {% if user.is_authenticated %}
     Welcome back, {{ user.username }}
     {% if user.username != '' %}
@@ -13,7 +14,7 @@
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
-        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+        <li><a id="question{{question.id}}" href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
